@@ -1,12 +1,12 @@
 #ifndef Mutex_h
 #define Mutex_h
-#include <process.h>
 #include <assert.h>
 #include "Locker.h"
 
-#define WIN 1
-#define LINUX 0
+#define WIN 0
+#define LINUX 1
 #if WIN
+#include <process.h>
 #include <windows.h>
 #endif
 
