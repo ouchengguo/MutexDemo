@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="mutex">
+      <UniqueIdentifier>{db22f0ce-3052-4060-879d-0806610be214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{62c7a14e-1578-4431-9f11-e68e822ed9f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\mutex\Locker.h">
+      <Filter>mutex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mutex\Mutex.h">
+      <Filter>mutex</Filter>
+    </ClInclude>
+    <ClInclude Include="src\thread\Thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mutex\MutexLinux.cpp">
+      <Filter>mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex\MutexWin.cpp">
+      <Filter>mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread\ThreadWin.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\thread\ThreadLinux.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
